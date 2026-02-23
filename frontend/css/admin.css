@@ -1,0 +1,50 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:url("../images/shopping-bg.jpg") no-repeat center center fixed;
+  background-size:cover;
+}
+
+.admin-container{
+  width:90%;
+  margin:30px auto;
+  background:rgba(255,255,255,0.95);
+  padding:30px;
+  border-radius:12px;
+}
+
+h1{
+  text-align:center;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-bottom:20px;
+  flex-wrap:wrap;
+}
+
+button{
+  padding:10px 15px;
+  border:none;
+  border-radius:8px;
+  background:#8a2be2;
+  color:white;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#6a1bb0;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th,td{
+  padding:10px;
+  border:1px solid #ccc;
+  text-align:center;
+}

@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Profile</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<h2>User Profile</h2>
+
+<div id="profile"></div>
+
+<script>
+
+const API="http://127.0.0.1:5000";
+
+async function load(){
+
+let token=localStorage.getItem("token");
+
+let res=await fetch(API+"/user/profile",{
+
+headers:{
+
+Authorization:"Bearer "+token
+
+}
+
+});
+
+let data=await res.json();
+
+document.getElementById("profile").innerHTML=`
+
+<p>Username : ${data.username}</p>
+
+<p>Email : ${data.email}</p>
+
+<p>Phone : ${data.phone}</p>
+
+<p>Address : ${data.address}</p>
+
+<p>Role : ${data.role}</p>
+
+`;
+
+}
+
+load();
+
+</script>
+
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadProfilePage()">
+
+  <h2 style="text-align:center;margin-top:30px;">User Profile</h2>
+
+  <div id="profile" class="container" style="max-width:500px;"></div>
+
+  <script src="js/auth.js"></script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadProfilePage()">
+
+  <div class="profile-container">
+
+    <h2>User Profile</h2>
+
+    <div id="profileView"></div>
+
+    <div id="editSection" style="display:none; margin-top:20px;">
+      <h3>Edit Details</h3>
+
+      <input type="text" id="edit_phone" placeholder="Phone Number">
+      <textarea id="edit_address" placeholder="Address"></textarea>
+
+      <button onclick="updateProfile()">Save Changes</button>
+      <button onclick="cancelEdit()">Cancel</button>
+    </div>
+
+    <button id="editBtn" onclick="enableEdit()">Edit Profile</button>
+
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

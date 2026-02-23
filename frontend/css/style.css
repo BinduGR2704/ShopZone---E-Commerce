@@ -1,0 +1,438 @@
+/* body{
+
+font-family:Arial;
+
+background:linear-gradient(
+135deg,
+#4b006e,
+#2a0040);
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.container{
+
+background:white;
+
+padding:40px;
+
+width:400px;
+
+border-radius:12px;
+
+box-shadow:0px 10px 30px rgba(0,0,0,0.4);
+
+}
+
+h2{
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+input,select,textarea{
+
+width:100%;
+
+padding:10px;
+
+margin-bottom:12px;
+
+border-radius:6px;
+
+border:1px solid #ccc;
+
+}
+
+button{
+
+width:100%;
+
+padding:12px;
+
+background:#8a2be2;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#6a1bb0;
+
+}
+
+.link{
+
+text-align:center;
+
+margin-top:10px;
+
+} */
+
+/* =============================
+GENERAL BODY
+============================= */
+/* RESET */
+
+/* *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+/* BODY BACKGROUND */
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* ===========================
+BACKGROUND (ALL PAGES)
+=========================== */
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+
+/* ======================
+BACKGROUND IMAGE
+====================== */
+
+body{
+
+height:100vh;
+
+background-image:url("../images/shopping-bg2.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+}
+
+
+/* DARK OVERLAY */
+
+.overlay{
+
+background:rgba(0,0,0,0.55);
+
+height:100vh;
+
+width:100%;
+
+}
+
+
+/* ======================
+NAVBAR
+====================== */
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 40px;
+
+color:white;
+
+}
+
+
+/* WEBSITE NAME LEFT */
+
+.logo{
+
+font-size:28px;
+
+font-weight:bold;
+
+}
+
+
+/* ICONS RIGHT */
+
+.nav-links{
+
+display:flex;
+
+gap:20px;
+
+}
+
+
+/* BUTTON STYLE */
+
+.nav-links a{
+
+text-decoration:none;
+
+color:white;
+
+padding:10px 18px;
+
+border-radius:8px;
+
+border:1px solid white;
+
+transition:.3s;
+
+}
+
+
+.nav-links a:hover{
+
+background:white;
+
+color:black;
+
+}
+
+
+/* ======================
+CENTER TEXT
+====================== */
+
+.hero{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+height:80vh;
+
+color:white;
+
+text-align:center;
+
+}
+
+
+.hero h1{
+
+font-size:50px;
+
+margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+font-size:20px;
+
+}
+
+
+
+/* ======================
+REGISTER LOGIN FORM
+====================== */
+
+.container{
+
+background:white;
+
+width:420px;
+
+padding:40px;
+
+border-radius:12px;
+
+box-shadow:0px 10px 30px rgba(0,0,0,.4);
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+}
+
+
+h2{
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+
+input,select,textarea{
+
+width:100%;
+
+padding:10px;
+
+margin-bottom:12px;
+
+border-radius:6px;
+
+border:1px solid #ccc;
+
+}
+
+
+button{
+
+width:100%;
+
+padding:12px;
+
+background:#8a2be2;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+
+button:hover{
+
+background:#6a1bb0;
+
+}
+
+
+.link{
+
+text-align:center;
+
+margin-top:10px;
+
+}
+
+/* PROFILE DROPDOWN */
+
+.profile-menu{
+
+position:relative;
+
+display:inline-block;
+
+}
+
+
+.profile-btn{
+
+background:transparent;
+
+color:white;
+
+border:1px solid white;
+
+padding:10px 18px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+
+.profile-btn:hover{
+
+background:white;
+
+color:black;
+
+}
+
+
+/* DROPDOWN BOX */
+
+.dropdown{
+
+display:none;
+
+position:absolute;
+
+right:0;
+
+top:45px;
+
+background:white;
+
+min-width:170px;
+
+border-radius:8px;
+
+box-shadow:0px 5px 15px rgba(0,0,0,.3);
+
+overflow:hidden;
+
+z-index:1000;
+
+}
+
+
+.dropdown a{
+
+display:block;
+
+padding:12px;
+
+color:black;
+
+text-decoration:none;
+
+}
+
+
+.dropdown a:hover{
+
+background:#eee;
+
+}

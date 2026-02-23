@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+<div class="admin-container">
+  <h1>Admin Dashboard</h1>
+
+  <div class="buttons">
+    <button onclick="loadUsers()">View Users</button>
+    <button onclick="loadOrders()">View Orders</button>
+    <button onclick="showAddProduct()">Add Product</button>
+    <button onclick="goShop()">Use As User</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div id="content"></div>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
